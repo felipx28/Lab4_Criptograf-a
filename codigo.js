@@ -61,15 +61,12 @@
             console.log(mensajeCifradoBase64, mensajeDescifradoTexto);
         }
 
-
-
          // Agregar el contenedor de mensajes descifrados al final de la página
         document.body.appendChild(mensajesDescifradosDiv);
-
     } else {
         console.log('No se encontraron mayúsculas en la página.');
     }
-
+    
     // Función para obtener la llave a partir de las mayúsculas en el texto
     function obtenerLlaveDesdeMayusculas(texto) {
         const mayúsculas = texto.match(/[A-Z]/g);
@@ -115,7 +112,5 @@
 
         // Agregar el div al final de la página
         document.body.appendChild(nuevoDiv);
-
     }
 })();
-
